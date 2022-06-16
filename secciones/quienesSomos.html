@@ -4,27 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <title>G - Compras/Ventas</title>
   </head>
   <body>
     <header class="container__header">
-     
       <div class="cont_header_up">
-      
-      <a href="#">  <div class="cont_titl_log">
-          <div class="cont_title"><h3>Shop-G</h3></div>
-          <div class="logo_cont">
-            <img
-              class="logo_img"
-              src="/medias/Logo_Nav.svg"
-              alt="logo del Nav"
-            />
+        <a href="#">
+          <div class="cont_titl_log">
+            <div class="cont_title"><h3>Shop-G</h3></div>
+            <div class="logo_cont">
+              <img
+                class="logo_img"
+                src="/medias/Logo_Nav.svg"
+                alt="logo del Nav"
+              />
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
         <div class="cont_form_buscar">
-          <a href="#"><div class="cont_icon_buscar"><img class="icon_Buscar" src="/medias/icono-Buscar.svg" alt=""></div></a>
+          <a href="#"
+            ><div class="cont_icon_buscar">
+              <img
+                class="icon_Buscar"
+                src="/medias/icono-Buscar.svg"
+                alt=""
+              /></div
+          ></a>
           <div class="cont_input_buscar">
             <input
               class="input_buscar"
@@ -72,9 +78,9 @@
             <ul>
               <li><a href="#">Categorias</a></li>
               <li><a href="#">Ofertas</a></li>
-              <li><a href="../secciones/vender.html">Vender</a></li>
-              <li><a href="../secciones/quienesSomos.html">Quines somos?</a></li>
-              <li><a href="../secciones/contacto.html">Contacto</a></li>
+              <li><a href="/secciones/formVender.html">Vender</a></li>
+              <li><a href="/secciones/quienesSomos.html">Quines somos?</a></li>
+              <li><a href="/secciones/formContacto.html">Contacto</a></li>
               <li><a href="#">Ayuda</a></li>
             </ul>
           </div>
@@ -82,12 +88,12 @@
             <div>
               <ul>
                 <li><a href="#">Login</a></li>
-                <li><a href="/section/registrarse.html">Registrarse</a></li>
+                <li><a href="/secciones/formRegistro.html">Registrarse</a></li>
                 <li><a href="#">Compras</a></li>
               </ul>
             </div>
             <div class="cont_IconoCarr">
-              <a href="/section/Carrito.html"
+              <a href="/secciones/carrito.html"
                 ><img
                   class="img_Carr"
                   src="/medias/Icono Carrito.svg"
@@ -97,92 +103,217 @@
           </div>
         </nav>
       </div>
-   
-  </header>
+    </header>
+    <!-- fin header -->
 
     <main>
-      <div>
-        <div><img src="/medias/img_quienesSomos.svg" alt="" /></div>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ducimus
-          dolorum consectetur nisi quidem at nulla sit dolorem, tempora
-          provident, eligendi quae labore aliquam eius, cupiditate ex voluptatem
-          sunt architecto?
-        </p>
-      </div>
-    </main>
-
-    <footer>
-
-      <div class="footer__cont_up">
-      <div class="footer_ContLogo">
-          
-        <a href="#">  <div class="cont_titl_log">
-            <div class="cont_title"><h3>Shop-G</h3></div>
-            <div class="logo_cont">
+      <section class="quinesSomos__Cont">
+        <div class="quienesSomos__contImg">
+          <img
+            class="quienesSomos__img"
+            src="/medias/IMG_QuienesSomos.jpg"
+            alt="img_quinessomos"
+          />
+        </div>
+        <div class="quienesSomos__contText">
+          <h3>Quienes Somos?</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+            totam, commodi aliquam a ad inventore culpa neque voluptatem
+            repellendus placeat exercitationem ab velit consectetur quo
+            mollitia? Illum quod provident reiciendis.
+          </p>
+        </div>
+        <h3>CONOCE NUESTRO EQUIPO DE TRABAJO</h3>
+        <div class="quienesSomos__contCard">
+          <div class="quienesSomos__presentCard">
+            <div class="quinesSomos__presntImg">
               <img
-                class="logo_img"
-                src="/medias/Logo_Nav.svg"
-                alt="logo del Nav"
+                class="quiensSomos__imgPresent"
+                src="/medias/CardPresent01.jpg"
+                alt="img_present01"
               />
             </div>
+            <div class="quiensSomos__presentImgText">
+              <h3>CEO</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur, obcaecati nulla. Quasi, perferendis qui, dolore
+                amet nulla aspernatur necessitatibus earum, aliquam quia quis
+                repudiandae debitis mollitia doloremque atque ipsum ipsam?
+              </p>
+            </div>
           </div>
-        </a>
+
+          <div class="quienesSomos__presentCard">
+            <div class="quinesSomos__presntImg">
+              <img
+                class="quiensSomos__imgPresent"
+                src="/medias/CardPresent02.jpg"
+                alt="img_present01"
+              />
+            </div>
+            <div class="quiensSomos__presentImgText">
+              <h3>Jefe de Diseño</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur, obcaecati nulla. Quasi, perferendis qui, dolore
+                amet nulla aspernatur necessitatibus earum, aliquam quia quis
+                repudiandae debitis mollitia doloremque atque ipsum ipsam?
+              </p>
+            </div>
+          </div>
+
+          <div class="quienesSomos__presentCard">
+            <div class="quinesSomos__presntImg">
+              <img
+                class="quiensSomos__imgPresent"
+                src="/medias/CardPresent03.jpg"
+                alt="img_present01"
+              />
+            </div>
+            <div class="quiensSomos__presentImgText">
+              <h3>Coordinadora General</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur, obcaecati nulla. Quasi, perferendis qui, dolore
+                amet nulla aspernatur necessitatibus earum, aliquam quia quis
+                repudiandae debitis mollitia doloremque atque ipsum ipsam?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__categ">
+        <div class="categ__subTitle"><h2>Categorias Destacadas</h2></div>
+        <div class="categ__cont">
+          <div class="categ__contImg">
+            <a href="#" class="categ__link"> Deportes </a>
+            <img
+              class="categ__img"
+              src="/medias/img_productos_circulo1.jpg"
+              alt="img_Categorias"
+            />
+          </div>
+
+          <div class="categ__contImg">
+            <a href="#" class="categ__link"> Belleza </a>
+            <img
+              class="categ__img"
+              src="/medias/img_productos_circulo2.jpg"
+              alt="img_Categorias"
+            />
+          </div>
+
+          <div class="categ__contImg">
+            <a href="#" class="categ__link"> Tecnología </a>
+            <img
+              class="categ__img"
+              src="/medias/img_productos_circulo3.jpg"
+              alt="img_Categorias"
+            />
+          </div>
+
+          <div class="categ__contImg">
+            <a href="#" class="categ__link"> Moda </a>
+            <img
+              class="categ__img"
+              src="/medias/img_productos_circulo4.jpg"
+              alt="img_Categorias"
+            />
+          </div>
+
+          <div class="categ__contImg">
+            <a href="#" class="categ__link"> Libros </a>
+            <img
+              class="categ__img"
+              src="/medias/img_productos_circulo5.jpg"
+              alt="img_Categorias"
+            />
+          </div>
+
+          <div class="categ__contImg">
+            <a href="#" class="categ__link"> Muebles </a>
+            <img
+              class="categ__img"
+              src="/medias/img_productos_circulo6.jpg"
+              alt="img_Categorias"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- inincio Footer -->
+    <footer>
+      <div class="footer__cont_up">
+        <div class="footer_ContLogo">
+          <a href="#">
+            <div class="cont_titl_log">
+              <div class="cont_title"><h3>Shop-G</h3></div>
+              <div class="logo_cont">
+                <img
+                  class="logo_img"
+                  src="/medias/Logo_Nav.svg"
+                  alt="logo del Nav"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <nav class="footer__ContMenu">
+          <div class="footer__menu">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="/secciones/formContacto.html">Contacto</a></li>
+              <li><a href="/secciones/formVender.html">Vender</a></li>
+              <li><a href="/secciones/quienesSomos.html">Quines somos?</a></li>
+              <li><a href="/secciones/formRegistro.html">Registrarse</a></li>
+            </ul>
+          </div>
+          <div class="footer__DatosCantacto">
+            <h4>Datos de Contacto</h4>
+
+            <p><em>Tel: (0381) - 4333555</em></p>
+            <p><em> E-mail: gabrielcano.86@gmail.com </em></p>
+            <p><em>Direccion: calle Fernando Paz 1568 - SM de Tucumán</em></p>
+          </div>
+        </nav>
+
+        <div class="footer__ContRsocial">
+          <ul class="footer__contRsocial_list">
+            <li>
+              <a href="https://www.facebook.com/">
+                <img
+                  class="icono_Rsocial"
+                  src="/medias/Icono_Facebook.svg"
+                  alt="icono de Icono_Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">
+                <img
+                  class="icono_Rsocial"
+                  src="/medias/icono-twitter.svg"
+                  alt="icono de Icono_twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <img
+                  class="icono_Rsocial"
+                  src="/medias/icono-Instagram.svg"
+                  alt="icono de Icono_Instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
-  
-      <nav class="footer__ContMenu">
-      <div class="footer__menu">
-    <h4>Menu</h4>
-        <ul>
-          
-        <li><a href="#">Categorias</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="/section/quienesSomos.html">Quines somos?</a></li>
-        <li><a href="#">Ayuda</a></li>
-      </ul>
-    </div>
-      <div class="footer__DatosCantacto">
-        <h4>Datos de Contacto</h4>
-  
-      <p> <em>Tel: (0381) - 4333555</em></p>
-      <p> <em> E-mail: gabrielcano.86@gmail.com </em></p>
-      <p><em>Direccion: calle Fernando Paz 1568 - SM de Tucumán</em></p>
-  
-    </div>
-    </nav>
-  
-    <div class="footer__ContRsocial">
-      <ul class="footer__contRsocial_list">
-        <li>
-          <a href="https://www.facebook.com/">
-            <img
-              class="icono_Rsocial"
-              src="/medias/Icono_Facebook.svg"
-              alt="icono de Icono_Facebook"
-          /></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/">
-            <img
-              class="icono_Rsocial"
-              src="/medias/icono-twitter.svg"
-              alt="icono de Icono_twitter"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/">
-            <img
-              class="icono_Rsocial"
-              src="/medias/icono-Instagram.svg"
-              alt="icono de Icono_Instagram"
-          /></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-    <div class="footer__cont_down">
-      <small>&copy Derechos reservados a Gabriel Eduardo Cano</small>
-    </div>
+      <div class="footer__cont_down">
+        <small>&copy Derechos reservados a Gabriel Eduardo Cano</small>
+      </div>
     </footer>
   </body>
 </html>

@@ -485,3 +485,72 @@ main {
   opacity: 1;
   transition: all 1s;
 }
+
+/* CARRITO */
+
+table {
+  margin: 5%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+table th {
+  text-align: center;
+}
+table td {
+  text-align: center;
+}
+
+button {
+  width: 100%;
+}
+
+/* QUIENES SOMOS */
+.quinesSomos__Cont h3 {
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.quienesSomos__img {
+  width: 100%;
+  opacity: 80%;
+}
+
+.quienesSomos__contImg {
+  width: 100%;
+  z-index: 1;
+}
+.quinesSomos__Cont,
+.quienesSomos__contText {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+.quienesSomos__contCard {
+  display: flex;
+  padding: 1%;
+  margin: auto;
+}
+
+.quiensSomos__imgPresent {
+  width: 100%;
+}
+.quinesSomos__presntImg {
+  width: 100%;
+}
+
+.quienesSomos__presentCard {
+  border: 1px solid black;
+  padding: 1%;
+  width: 30%;
+  margin: 1%;
+  box-shadow: 0px 0px 12px 2px black;
+}
+.quiensSomos__presentImgText {
+  margin: 0.5%;
+  text-align: justify;
+}
