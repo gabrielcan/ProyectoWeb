@@ -10,7 +10,7 @@
   <body>
     <header class="container__header">
       <div class="cont_header_up">
-        <a href="#">
+        <a href="/index.html">
           <div class="cont_titl_log">
             <div class="cont_title"><h3>Shop-G</h3></div>
             <div class="logo_cont">
@@ -106,13 +106,182 @@
     </header>
     <!-- fin header -->
 
-    <main></main>
+    <main>
+      <section class="main__formVender_cont">
+        <aside class="formVenderpublicidad__cont">
+          <img
+            class="formVenderpublicidad__img"
+            src="/medias/Publicidad01.jpg"
+            alt="imgPublicidad01"
+          />
+        </aside>
+        <form action="" method="get" class="formVender__cont">
+          <h3>Fomulario de Carga de Productos</h3>
+          <label for="Categorias"> Categorias</label>
+          <select name="catergoría" id="catergoría">
+            <option value="Tecnología">Tecnología</option>
+            <option value="Moda">Moda</option>
+          </select>
+
+          <label for="color"> Color</label>
+          <select name="color" id="color">
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+          </select>
+
+          <label for="estado">Estado</label>
+          <select name="estado" id="estado">
+            <option value="usado">Usado</option>
+            <option value="nuevo">Nuevo</option>
+          </select>
+
+          <label for="tipoPago">Pagos aceptados</label>
+          <div class="formVender__check_cont">
+            <div class="formVender__Check">
+              <label for="contado">Contado</label>
+              <input type="checkbox" name="contado" id="contado" />
+            </div>
+
+            <div class="formVender__Check">
+              <label for="tarjeta">Tarjeta</label>
+              <input type="checkbox" name="tarjeta" id="tarjeta" />
+            </div>
+          </div>
+          <label for="stock">Stock</label>
+          <input type="number" name="stock" id="stock" required />
+
+          <label for="precio">Precio del producto</label>
+          <input type="number" name="precio" id="precio" required />
+
+          <label for="titulo">Titulo del Articulo:</label>
+          <input type="text" name="titulo" id="titulo" required />
+          <label for="descripcion">Descripcion del Producto</label>
+          <textarea
+            name="descripcion"
+            id="descripcion"
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <div class="formVender__condiciones">
+            <small for="condiciones">Acepta terminos y condiciones</small>
+            <input type="checkbox" name="condiciones" id="condiciones" />
+          </div>
+          <button type="submit" class="formRegist__buttonEnviar">
+            Guardar
+          </button>
+          <button type="reset" class="formRegist__buttonEnviar">
+            Cancelar
+          </button>
+        </form>
+        <aside class="formVenderpublicidad__cont">
+          <img
+            class="formVenderpublicidad__img"
+            src="/medias/Publicidad02.jpg"
+            alt="imgPublicidad01"
+          />
+        </aside>
+      </section>
+
+      <!-- Section Art Destacados -->
+      <section class="artDestacados__cont">
+        <!-- Articulo 1 -->
+        <div class="artTitle__cont"><h2>Articulos Destacadas</h2></div>
+
+        <div class="tarjetas__Cont">
+          <div class="tarjetaArt__cont">
+            <a href="#" class="tarjetaArt__link">
+              <small> Apple iPhone 13 Pro Max (256 GB) - Azul Sierra </small>
+            </a>
+            <div class="tarjetaArt__contImg">
+              <img
+                class="tarjetaArt__Img"
+                src="/medias/IMG_Articulo1-1.jpg"
+                alt="img articulo"
+              />
+            </div>
+            <div class="tarjetaArt__descrip">
+              <h3>$105.000</h3>
+              <small>6 Cuotas sin interes</small>
+              <small>Envio Gratuito</small>
+            </div>
+          </div>
+
+          <!-- Articulo 2 -->
+
+          <div class="tarjetaArt__cont">
+            <a href="#" class="tarjetaArt__link">
+              <small>
+                Teclado gamer HyperX Alloy Origins 60 QWERTY Red inglés US color
+                negro con luz RGB</small
+              >
+            </a>
+            <div class="tarjetaArt__contImg">
+              <img
+                class="tarjetaArt__Img"
+                src="/medias/IMG_Articulo2.jpg"
+                alt="img articulo"
+              />
+            </div>
+            <div class="tarjetaArt__descrip">
+              <h3>$30.000</h3>
+              <small>6 Cuotas sin interes</small>
+              <small>Envio Gratuito</small>
+            </div>
+          </div>
+
+          <!-- Articulo 3 -->
+
+          <div class="tarjetaArt__cont">
+            <a href="#" class="tarjetaArt__link">
+              <small>
+                Canon PowerShot SX SX420 IS compacta avanzada color negro
+              </small>
+            </a>
+            <div class="tarjetaArt__contImg">
+              <img
+                class="tarjetaArt__Img"
+                src="/medias/IMG_Articulo3.jpg"
+                alt="img articulo"
+              />
+            </div>
+            <div class="tarjetaArt__descrip">
+              <h3>$200.000</h3>
+              <small>9 Cuotas sin interes</small>
+              <small>Envio Gratuito</small>
+            </div>
+          </div>
+
+          <!-- Articulo 4 -->
+
+          <div class="tarjetaArt__cont">
+            <a href="#" class="tarjetaArt__link">
+              <small>
+                Zapatillas Jaguar Oficial Art. #8575 34 Al 44 Hombre Y Mujer
+              </small>
+            </a>
+            <div class="tarjetaArt__contImg">
+              <img
+                class="tarjetaArt__Img"
+                src="/medias/IMG_Articulo4.jpg"
+                alt="img articulo"
+              />
+            </div>
+            <div class="tarjetaArt__descrip">
+              <h3>$100.000</h3>
+              <small>10 Cuotas sin interes</small>
+              <small>Envio Gratuito</small>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- inincio Footer -->
     <footer>
       <div class="footer__cont_up">
         <div class="footer_ContLogo">
-          <a href="#">
+          <a href="/index.html">
             <div class="cont_titl_log">
               <div class="cont_title"><h3>Shop-G</h3></div>
               <div class="logo_cont">
