@@ -147,7 +147,7 @@ section {
 }
 .cont_icon_buscar {
   height: 100%;
-  width: 2.3rem;
+  width: 2.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -508,10 +508,61 @@ button {
 }
 
 /* QUIENES SOMOS */
+
+.quinesSomos__Cont {
+  display: grid;
+  grid-template-rows: 64% 3% 31%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.3%;
+  grid-template-areas:
+      "area1 area1 area1 area1 area1 area1 area1 area1 area1 area1 area1 area1"
+      "area2 area2 area2 area2 area2 area2 area2 area2 area2 area2 area2 area2"
+      "area3 area3 area3 area4 area4 area4 area5 area5 area5 area6 area6 area6";
+  align-items: stretch;
+  /* margin-top: 1%; */
+  overflow: hidden;
+  align-content: stretch;
+}
 .quinesSomos__Cont h3 {
   margin-top: 1%;
   margin-bottom: 2%;
   text-align: center;
+}
+.quinesSomos__inicioCont {
+  text-align: center;
+  border: #918c8c60 1px solid;
+  grid-area: area1;
+  overflow: hidden;
+}
+
+.quienesSomos__presentCard3,
+.quienesSomos__presentCard4,
+.quienesSomos__presentCard5,
+.quienesSomos__presentCard6 {
+  box-shadow: -1px 0px 10px 2px grey;
+  border: 1px solid #0606065e;
+}
+.quienesSomos__presentCard3 {
+  grid-area: area3;
+}
+
+.quienesSomos__presentCard4 {
+  grid-area: area4;
+}
+.quienesSomos__presentCard5 {
+  grid-area: area5;
+}
+.quienesSomos__presentCard6 {
+  grid-area: area6;
+}
+
+.quinesSomos__subtitle2 {
+  grid-area: area2;
+  text-align: center;
+  justify-self: center;
+  font-size: 25px;
+margin-bottom: 2%;
+  text-shadow: 2px 2px 3px grey;
 }
 
 .quienesSomos__img {
@@ -523,7 +574,7 @@ button {
   width: 100%;
   z-index: 1;
 }
-.quinesSomos__Cont,
+
 .quienesSomos__contText {
   display: flex;
   justify-content: center;
@@ -550,28 +601,28 @@ button {
   width: 30%;
   margin: 1%;
   box-shadow: 3px 2px 13px 0px #b29168;
-  border-radius: 2%;k;
+  border-radius: 2%;
 }
 .quiensSomos__presentImgText {
   margin: 0.5%;
   text-align: justify;
   color: #060608cc;
+  padding: 1%;
 }
 
 /* Form Contacto */
 
-.main__formContacto_cont section{
+.main__formContacto_cont section {
   display: flex;
   flex-direction: column;
-
 }
-.main__formContacto_cont{
+.main__formContacto_cont {
   flex-direction: row;
   display: flex;
   align-content: center;
   justify-content: space-between;
 }
-.formContacto__cont{
+.formContacto__cont {
   background: rgba(178, 145, 104, 0.44);
   display: flex;
   flex-direction: column;
@@ -581,13 +632,13 @@ button {
   width: 40%;
   max-height: 315px;
 }
-.formContacto__cont label{
+.formContacto__cont label {
   margin: 1%;
 }
-.formContacto__cont h3{
-text-align: center;
+.formContacto__cont h3 {
+  text-align: center;
 }
-.formContacto__buttonEnviar{
+.formContacto__buttonEnviar {
   background: #000;
   color: white;
   display: flex;
@@ -604,38 +655,36 @@ text-align: center;
   opacity: 100%;
   transition: all 1s;
 }
-.formContacto__buttonEnviar:hover{
+.formContacto__buttonEnviar:hover {
   background: #fdc43f;
   color: #000;
   transition: all 1s;
   opacity: 80%;
 }
 
-  .publicidad__img{
-    width: 100%;
-    opacity: 90%;
-  }
-  .publicidad__cont{
-    width: 17.5%;
-    display: flex;
-    align-self: center;
-  }
+.publicidad__img {
+  width: 100%;
+  opacity: 90%;
+}
+.publicidad__cont {
+  width: 17.5%;
+  display: flex;
+  align-self: center;
+}
 
-  /* Formulario Registro */
+/* Formulario Registro */
 
-  
-.main__formRegist_cont section{
+.main__formRegist_cont section {
   display: flex;
   flex-direction: column;
-
 }
-.main__formRegist_cont{
+.main__formRegist_cont {
   flex-direction: row;
   display: flex;
   align-content: center;
   justify-content: space-between;
 }
-.formRegist__cont{
+.formRegist__cont {
   background: rgba(178, 145, 104, 0.44);
   display: flex;
   flex-direction: column;
@@ -648,21 +697,21 @@ text-align: center;
   border-radius: 2rem;
   box-shadow: -2px 2px 10px 2px black;
 }
-.formRegist__cont input{
+.formRegist__cont input {
   width: 60%;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    border-radius: 2rem;
-    padding: 1%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  border-radius: 2rem;
+  padding: 1%;
 }
-.formRegist__cont label{
+.formRegist__cont label {
   margin: 1%;
 }
-.formRegist__cont h3{
-text-align: center;
+.formRegist__cont h3 {
+  text-align: center;
 }
-.formRegist__buttonEnviar{
+.formRegist__buttonEnviar {
   background: #000;
   color: white;
   display: flex;
@@ -679,23 +728,23 @@ text-align: center;
   opacity: 100%;
   transition: all 1s;
 }
-.formRegist__buttonEnviar:hover{
+.formRegist__buttonEnviar:hover {
   background: #fdc43f;
   color: #000;
   transition: all 1s;
   opacity: 80%;
 }
 
-.formRegistpublicidad__img{
+.formRegistpublicidad__img {
   width: 100%;
   opacity: 90%;
 }
-.formRegistpublicidad__cont{
+.formRegistpublicidad__cont {
   width: 28%;
   display: flex;
   align-self: center;
 }
-.formRegist__condiciones{
+.formRegist__condiciones {
   margin: 2% 30% 2% 30%;
   text-align: center;
   display: flex;
@@ -703,25 +752,21 @@ text-align: center;
 
 /* formVender */
 
-
-.main__formVender_cont section{
+.main__formVender_cont section {
   display: flex;
   flex-direction: column;
-
 }
-.main__formVender_cont{
+.main__formVender_cont {
   flex-direction: row;
   display: flex;
   align-content: center;
   justify-content: space-between;
 }
-.formVender__cont{
+.formVender__cont {
   background: rgba(178, 145, 104, 0.44);
   display: flex;
   flex-direction: column;
-  border: 1px
-px
-solid black;
+  border: 1px px solid black;
   padding: 1%;
   margin: 1%;
   width: 40%;
@@ -732,26 +777,26 @@ solid black;
   align-items: center;
   box-shadow: -2px 2px 10px 2px black;
 }
-.formVender__cont input{
+.formVender__cont input {
   width: 60%;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    border-radius: 2rem;
-    padding: 1%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  border-radius: 2rem;
+  padding: 1%;
 }
-.formVender__cont label{
+.formVender__cont label {
   margin: 1%;
 }
-.formVender__cont h3{
-text-align: center;
+.formVender__cont h3 {
+  text-align: center;
 }
-.formVender__cont select{
+.formVender__cont select {
   width: 28%;
   text-align: center;
   padding: 1%;
 }
-.formVender__buttonEnviar{
+.formVender__buttonEnviar {
   background: #000;
   color: white;
   display: flex;
@@ -768,28 +813,28 @@ text-align: center;
   opacity: 100%;
   transition: all 1s;
 }
-.formVender__buttonEnviar:hover{
+.formVender__buttonEnviar:hover {
   background: #fdc43f;
   color: #000;
   transition: all 1s;
   opacity: 80%;
 }
 
-.formVenderpublicidad__img{
+.formVenderpublicidad__img {
   width: 100%;
   opacity: 90%;
 }
-.formVenderpublicidad__cont{
+.formVenderpublicidad__cont {
   width: 28%;
   display: flex;
   align-self: center;
 }
-.formVender__condiciones{
+.formVender__condiciones {
   margin: 2% 30% 2% 30%;
   text-align: center;
   display: flex;
 }
-.formVender__Check{
+.formVender__Check {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -798,7 +843,7 @@ text-align: center;
   align-content: center;
   margin: 1.1%;
 }
-.formVender__check_cont{
+.formVender__check_cont {
   width: 40%;
   display: flex;
   align-content: center;
