@@ -56,6 +56,201 @@ section {
   margin-bottom: 0.5%;
 }
 
+/* inicio Mobile */
+@media (max-width: 500px) {
+  .cont_menu1 {
+    width: 100%;
+  }
+  .menu1__Option{
+    display: none !important;
+  }
+  .container__header {
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5%;
+  }
+  .cont_header_up,
+  .cont_header_down {
+    max-width: 500px;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .cont_titl_log {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: -2px -2px 3px black;
+  }
+  .cont_title {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .logo_cont {
+    height: 100%;
+    width: 3rem;
+  }
+  .cont_form_buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+  }
+  .cont_icon_buscar {
+    height: 100%;
+    width: 2.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem 0rem 0rem 2rem;
+    padding: 1.5px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+  }
+  .cont_input_buscar {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-radius: 0rem 2rem 2rem 0rem;
+    z-index: 80;
+    padding: 4px;
+    background-color: white;
+  }
+  .cont_rsocial {
+    display: none !important;
+  }
+  .cont_menu1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .cont_menu2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    flex-direction: column;
+  }
+/* tarejtas articulos destacados */
+
+.tarjetas__Cont{
+  display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.tarjetaArt__cont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 1%;
+    overflow: hidden;
+    width:100% !important;
+    box-shadow: 3px 4px 11px 0px black;
+}
+
+.tarjetaArt__cont:focus{
+  background: #00000069;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.artTitle__cont{
+
+  justify-content: center !important;
+ 
+}
+.categ__subTitle{
+  text-align: center;
+}
+
+/* Footer mobile */
+.footer__cont_up{
+  flex-direction: column;
+}
+.footer_ContLogo{
+  width: 100% !important;
+}
+.footer__ContMenu{
+  width: 100% !important;
+}
+.icono_Rsocial{
+  width: 2rem !important;
+}
+
+.categ__link{
+  font-size: 1rem !important;
+}
+.circulo__none{
+  display: none !important;
+}
+.categ__contImg{
+  width: 18% !important;
+}
+/* quines somos */
+.quinesSomos__Cont{
+  display: grid !important;
+  grid-template-rows: 17% 2% 20% !important;
+  grid-template-columns: 100% !important;
+  grid-gap: 0.3%;
+  grid-template-areas:
+      "area1 "
+      "area2 "
+      "area3 "
+      "area4 "
+      "area5 "
+      "area6 " !important;
+  overflow: hidden;
+  align-content: center !important;
+  justify-content: center !important;
+  justify-items: center !important;
+}
+
+.quienesSomos__presentCard3,
+.quienesSomos__presentCard4,
+.quienesSomos__presentCard5,
+.quienesSomos__presentCard6 {
+  margin: 0% !important;
+  padding: 1%;
+  width: 96%;
+  align-self: center;
+  justify-self: center;
+  border: 1px solid #0606065e !important;
+}
+.quinesSomos__subtitle2{
+  margin-bottom: 0% !important;
+}
+.quinesSomos__inicioCont{
+  overflow: initial !important;
+}
+} /* FIn Mobile */
+
+
 .cont_menu1 ul {
   display: inline-block;
 }
@@ -63,6 +258,7 @@ section {
 .cont_menu1 ul li {
   display: inline;
   padding: 0.2rem;
+  font-size: 1.2rem;
 }
 
 .cont_menu1 ul li a {
@@ -83,6 +279,7 @@ section {
   align-content: center;
   display: inline;
   padding: 0.2rem;
+  font-size: 1.2rem;
 }
 
 .cont_menu2 ul li a {
@@ -515,9 +712,9 @@ button {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.3%;
   grid-template-areas:
-      "area1 area1 area1 area1 area1 area1 area1 area1 area1 area1 area1 area1"
-      "area2 area2 area2 area2 area2 area2 area2 area2 area2 area2 area2 area2"
-      "area3 area3 area3 area4 area4 area4 area5 area5 area5 area6 area6 area6";
+    "area1 area1 area1 area1 area1 area1 area1 area1 area1 area1 area1 area1"
+    "area2 area2 area2 area2 area2 area2 area2 area2 area2 area2 area2 area2"
+    "area3 area3 area3 area4 area4 area4 area5 area5 area5 area6 area6 area6";
   align-items: stretch;
   /* margin-top: 1%; */
   overflow: hidden;
@@ -561,7 +758,7 @@ button {
   text-align: center;
   justify-self: center;
   font-size: 25px;
-margin-bottom: 2%;
+  margin-bottom: 2%;
   text-shadow: 2px 2px 3px grey;
 }
 
