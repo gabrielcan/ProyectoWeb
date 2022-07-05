@@ -11,12 +11,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
 }
 a {
-  text-decoration: none;
-  color: #000;
+  text-decoration: none !important;
+  color: #000 !important;
 }
 header {
   width: 100vw;
@@ -57,11 +57,18 @@ section {
 }
 
 /* inicio Mobile */
-@media (max-width: 500px) {
+@media (max-width: 576px) {
+  .subt__Section {
+    margin-top: 2%;
+    font-size: 30% !important;
+
+    border-bottom: 1px solid gray;
+    justify-items: center;
+  }
   .cont_menu1 {
     width: 100%;
   }
-  .menu1__Option{
+  .menu1__Option {
     display: none !important;
   }
   .container__header {
@@ -73,17 +80,31 @@ section {
     align-items: center;
     margin-bottom: 0.5%;
   }
-  .cont_header_up,
   .cont_header_down {
-    max-width: 500px;
-    width: 100vw;
+    display: none !important;
+  }
+  .cont_header_up {
+    max-width: 1200px;
+    width: 100%;
     height: 100%;
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
   }
+  .cont_header_up ul {
+    align-items: flex-start !important;
+  }
+  .cont_header_up ul li {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .header__menu_hamburg {
+    width: 20% !important;
+    background-color: #fff15b !important;
+  }
+
   .cont_titl_log {
     width: 100%;
     display: flex;
@@ -108,17 +129,8 @@ section {
     height: 80%;
   }
   .cont_icon_buscar {
-    height: 100%;
-    width: 2.1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2rem 0rem 0rem 2rem;
-    padding: 1.5px;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    background-color: white;
+    width: 2.1rem !important;
+    padding: 0px !important;
   }
   .cont_input_buscar {
     border-bottom: 1px solid black;
@@ -128,6 +140,12 @@ section {
     z-index: 80;
     padding: 4px;
     background-color: white;
+  }
+  .input_buscar {
+    font-size: 1rem !important;
+  }
+  .icon_Buscar {
+    width: 98% !important;
   }
   .cont_rsocial {
     display: none !important;
@@ -152,17 +170,17 @@ section {
     padding: 0px;
     flex-direction: column;
   }
-/* tarejtas articulos destacados */
+  /* tarejtas articulos destacados */
 
-.tarjetas__Cont{
-  display: flex;
+  .tarjetas__Cont {
+    display: flex;
     margin: auto;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-}
+  }
 
-.tarjetaArt__cont{
+  .tarjetaArt__cont {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -170,86 +188,68 @@ section {
     justify-content: center;
     margin: 1%;
     overflow: hidden;
-    width:100% !important;
+    width: 100% !important;
     box-shadow: 3px 4px 11px 0px black;
-}
+  }
 
-.tarjetaArt__cont:focus{
-  background: #00000069;
-  opacity: 1;
-  transition: all 1s;
-}
+  .tarjetaArt__cont:focus {
+    background: #00000069;
+    opacity: 1;
+    transition: all 1s;
+  }
 
-.artTitle__cont{
+  .artTitle__cont {
+    justify-content: center !important;
+  }
+  .categ__subTitle {
+    text-align: center;
+  }
+  /* ART MAS VENDIDOS */
 
-  justify-content: center !important;
- 
-}
-.categ__subTitle{
-  text-align: center;
-}
+  .artmasVend__ContCard {
+    flex-direction: column;
+  }
+  /* Footer mobile */
+  .footer__cont_up {
+    flex-direction: column;
+  }
+  .footer_ContLogo {
+    width: 100% !important;
+  }
+  .footer__ContMenu {
+    width: 100% !important;
+  }
+  .icono_Rsocial {
+    width: 2rem !important;
+  }
 
-/* Footer mobile */
-.footer__cont_up{
-  flex-direction: column;
-}
-.footer_ContLogo{
-  width: 100% !important;
-}
-.footer__ContMenu{
-  width: 100% !important;
-}
-.icono_Rsocial{
-  width: 2rem !important;
-}
-
-.categ__link{
-  font-size: 1rem !important;
-}
-.circulo__none{
-  display: none !important;
-}
-.categ__contImg{
-  width: 18% !important;
-}
-/* quines somos */
-.quinesSomos__Cont{
-  display: grid !important;
-  grid-template-rows: 17% 2% 20% !important;
-  grid-template-columns: 100% !important;
-  grid-gap: 0.3%;
-  grid-template-areas:
-      "area1 "
-      "area2 "
-      "area3 "
-      "area4 "
-      "area5 "
-      "area6 " !important;
-  overflow: hidden;
-  align-content: center !important;
-  justify-content: center !important;
-  justify-items: center !important;
-}
-
-.quienesSomos__presentCard3,
-.quienesSomos__presentCard4,
-.quienesSomos__presentCard5,
-.quienesSomos__presentCard6 {
-  margin: 0% !important;
-  padding: 1%;
-  width: 96%;
-  align-self: center;
-  justify-self: center;
-  border: 1px solid #0606065e !important;
-}
-.quinesSomos__subtitle2{
-  margin-bottom: 0% !important;
-}
-.quinesSomos__inicioCont{
-  overflow: initial !important;
-}
+  .categ__link {
+    font-size: 1rem !important;
+  }
+  .circulo__none {
+    display: none !important;
+  }
+  .categ__contImg {
+    width: 18% !important;
+  }
 } /* FIn Mobile */
 
+/* INDEX */
+.artmasVend__ContCard {
+  border: 0px !important;
+  flex-direction: row;
+  justify-content: center;
+}
+.artmasVend__Card {
+  border: 1px solid gray;
+  box-shadow: inset -1px -1px 2px 0px grey;
+  border-radius: 0.5rem;
+  max-width: 35rem;
+  justify-self: center;
+  align-items: center;
+  padding: 0.3%;
+  margin: 0.1% !important;
+}
 
 .cont_menu1 ul {
   display: inline-block;
@@ -294,7 +294,7 @@ section {
 
 .cont_menu2 {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
 }
 
@@ -344,12 +344,12 @@ section {
 }
 .cont_icon_buscar {
   height: 100%;
-  width: 2.4rem;
+  width: 2.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 2rem 0rem 0rem 2rem;
-  padding: 1.5px;
+  padding: 1px;
   border-left: 1px solid black;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -377,7 +377,7 @@ section {
 .cont_title {
   font-size: 2rem;
   display: flex;
-  align-items: center;
+  align-self: end;
 }
 
 .cont_header_down,
@@ -514,7 +514,7 @@ main {
 /* Categoria destacadas en circulos */
 .section__categ {
   display: flex;
-  margin: 1% 2%;
+  margin: 1%;
   flex-direction: column;
   max-width: 1200px;
 }
@@ -558,7 +558,7 @@ main {
 .categ__link {
   font-weight: bold;
   font-size: 1.5rem;
-  color: #ffc107;
+  color: #ffc107 !important;
   text-shadow: 3px 0px 7px black;
   position: absolute;
   display: flex;
@@ -597,19 +597,18 @@ main {
 
 .artDestacados__cont {
   display: flex;
-  margin: 2%;
+  margin: 1%;
   justify-content: center;
   align-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.artTitle__cont {
+.subt__Section {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 100;
   color: #9d9d9d;
-  margin-bottom: 1%;
   /* text-align: start; */
   display: flex;
   justify-content: start;
@@ -641,10 +640,9 @@ main {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  margin: 1%;
+  margin: 0.3%;
   width: 100%;
   overflow: hidden;
-  width: 20%;
   box-shadow: 3px 4px 11px 0px black;
 }
 .tarjetaArt__descrip {
@@ -665,7 +663,7 @@ main {
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
-  color: #ffc107;
+  color: #ffc107 !important;
   text-shadow: 3px 0px 7px black;
   position: absolute;
   display: flex;
@@ -705,106 +703,18 @@ button {
 }
 
 /* QUIENES SOMOS */
-
-.quinesSomos__Cont {
-  display: grid;
-  grid-template-rows: 64% 3% 31%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 0.3%;
-  grid-template-areas:
-    "area1 area1 area1 area1 area1 area1 area1 area1 area1 area1 area1 area1"
-    "area2 area2 area2 area2 area2 area2 area2 area2 area2 area2 area2 area2"
-    "area3 area3 area3 area4 area4 area4 area5 area5 area5 area6 area6 area6";
-  align-items: stretch;
-  /* margin-top: 1%; */
-  overflow: hidden;
-  align-content: stretch;
-}
-.quinesSomos__Cont h3 {
-  margin-top: 1%;
-  margin-bottom: 2%;
-  text-align: center;
-}
-.quinesSomos__inicioCont {
-  text-align: center;
-  border: #918c8c60 1px solid;
-  grid-area: area1;
-  overflow: hidden;
-}
-
-.quienesSomos__presentCard3,
-.quienesSomos__presentCard4,
-.quienesSomos__presentCard5,
-.quienesSomos__presentCard6 {
-  box-shadow: -1px 0px 10px 2px grey;
-  border: 1px solid #0606065e;
-}
-.quienesSomos__presentCard3 {
-  grid-area: area3;
-}
-
-.quienesSomos__presentCard4 {
-  grid-area: area4;
-}
-.quienesSomos__presentCard5 {
-  grid-area: area5;
-}
-.quienesSomos__presentCard6 {
-  grid-area: area6;
-}
-
-.quinesSomos__subtitle2 {
-  grid-area: area2;
-  text-align: center;
-  justify-self: center;
-  font-size: 25px;
-  margin-bottom: 2%;
-  text-shadow: 2px 2px 3px grey;
-}
-
-.quienesSomos__img {
-  width: 100%;
-  opacity: 80%;
-}
-
-.quienesSomos__contImg {
-  width: 100%;
-  z-index: 1;
-}
-
-.quienesSomos__contText {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  margin-bottom: 2%;
-}
-.quienesSomos__contCard {
-  display: flex;
-  padding: 1%;
-  margin: auto;
-}
-
-.quiensSomos__imgPresent {
-  width: 100%;
-}
-.quinesSomos__presntImg {
-  width: 100%;
-}
-
-.quienesSomos__presentCard {
-  border: 1px solid #cbcac8;
-  padding: 1%;
-  width: 30%;
-  margin: 1%;
-  box-shadow: 3px 2px 13px 0px #b29168;
-  border-radius: 2%;
-}
-.quiensSomos__presentImgText {
-  margin: 0.5%;
+.quienesSomos__Text {
   text-align: justify;
-  color: #060608cc;
-  padding: 1%;
+}
+.quienesSomos__Title {
+  text-align: center;
+}
+.quinesSomos__SubtitlePresent {
+  text-align: center;
+  text-shadow: -1px 0px 2px #6c6c6e;
+}
+.quienesSomos__Present_Cont {
+  margin-bottom: 1%;
 }
 
 /* Form Contacto */
@@ -818,6 +728,7 @@ button {
   display: flex;
   align-content: center;
   justify-content: space-between;
+  width: 80%;
 }
 .formContacto__cont {
   background: rgba(178, 145, 104, 0.44);
@@ -859,14 +770,30 @@ button {
   opacity: 80%;
 }
 
+/* Publicidad - agrgamos Animacion */
 .publicidad__img {
   width: 100%;
-  opacity: 90%;
+  animation: publicidad 5s alternate-reverse infinite;
 }
+
 .publicidad__cont {
-  width: 17.5%;
+  width: 20%;
   display: flex;
   align-self: center;
+}
+
+@keyframes publicidad {
+  0% {
+    opacity: 0%;
+    width: 10%;
+    border-radius: 100%;
+  }
+  50% {
+    border-radius: 80%;
+  }
+  100% {
+    border-radius: 10%;
+  }
 }
 
 /* Formulario Registro */
